@@ -6,11 +6,7 @@ class Solution {
             for (int col = 0; col < y/2; col++) {
                 swap(image,row,col);
             }
-            System.out.println(Arrays.deepToString(image));
-        }
-
-        for(int row=0 ; row<image.length ; row++){
-            for(int col=0 ; col< image[row].length; col++){
+            for (int col = 0; col < y; col++) {
                 if (image[row][col]==0){
                     image[row][col]=1;
                 }
@@ -18,6 +14,7 @@ class Solution {
                     image[row][col]=0;
                 }
             }
+            
         }
         return image;   
     }
